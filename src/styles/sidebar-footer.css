@@ -1,7 +1,9 @@
 .sidebar {
 	width: 24.5rem;
 	background-color: #000000;
-	padding: 10px;
+	padding: 8px;
+	position: fixed;
+	z-index: 2;
 }
 
 .sidebar .logo {
@@ -160,22 +162,26 @@
 .footer-links {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 8.5rem 0rem 4rem 0rem;
+	padding: 6rem 0rem 4.7rem 0rem;
 }
 
-.sidebar .cookies {
+.sidebar .footer-link {
 	margin: 8px 10px;
 }
 
-.sidebar .cookies a {
+.sidebar .footer-link a {
 	color: #b3b3b3;
 	font-weight: 500;
 	text-decoration: none;
-	font-size: 11px;
+	font-size: 0.7rem;
 }
 
-.sidebar .cookies a:hover {
+.sidebar .footer-link a:hover {
 	text-decoration: underline;
+}
+
+.languages {
+	padding-bottom: 1.5rem;
 }
 
 .languages .languages__button {
@@ -191,19 +197,24 @@
 	font-weight: bold;
 }
 
+.languages__button:hover {
+	transform: scale(1.04);
+	border-color: #fff;
+}
+
 .disclaimer-premium {
 	position: fixed;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	background: linear-gradient(to right, #ae2896, #509bf5);
-	padding: 15px 20px;
+	padding: 1.3rem;
 	display: flex;
 	justify-content: space-between;
-	margin: 8px 10px 5px 10px;
+	z-index: 3;
 }
 .disclaimer-premium .text {
-	flex-shrink: 0;
+	word-wrap: break-word;
 }
 .disclaimer-premium .disclaimer-premium__title {
 	color: #ffffff;
@@ -222,13 +233,12 @@
 .disclaimer-premium button {
 	background-color: #ffffff;
 	color: #000000;
-	font-size: 15px;
+	font-size: 1rem;
 	font-weight: bold;
-	padding: 14px 30px;
+	padding: 0.8rem 1rem;
 	border: 0px;
 	border-radius: 40px;
 	cursor: pointer;
-	flex-shrink: 0;
 }
 
 .disclaimer-premium button:hover {

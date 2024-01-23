@@ -17,16 +17,16 @@ const currentHour = new Date().getHours();
 
 // Forma mais simples
 const greetingMessage =
-  currentHour >= 5 && currentHour < 12
-    ? "Bom dia"
-    : currentHour >= 12 && currentHour < 18
-    ? "Boa tarde"
-    : "Boa noite";
+	currentHour >= 5 && currentHour < 12
+		? "Buenos días"
+		: currentHour >= 12 && currentHour < 18
+		? "Buenas tardes"
+		: "Buenas noches";
 
 greetingElement.textContent = greetingMessage;
 
 // GRID INTELIGENTE
-const container = document.querySelector(".offer__list-item");
+/* const container = document.querySelector(".offer__list-item");
 
 const observer = new ResizeObserver(() => {  //mudanças no tamanho do elemento 
   const containerWidth = container.offsetWidth; //largura total do elemento, incluindo largura do conteúdo, bordas e preenchimento.
@@ -39,4 +39,4 @@ const observer = new ResizeObserver(() => {  //mudanças no tamanho do elemento
   console.log({ numColumns });
 });
 //observando a mudança do elemento
-observer.observe(container);
+observer.observe(container); */
