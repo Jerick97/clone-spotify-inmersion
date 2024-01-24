@@ -62,6 +62,7 @@ searchInput.addEventListener("input", function () {
 
 	if (searchTerm === "") {
 		resultArtist.classList.add("hidden");
+		errorMessageContainer.classList.add("hidden");
 		playlistContainer.classList.remove("hidden");
 		return;
 	}
