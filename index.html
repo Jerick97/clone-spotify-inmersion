@@ -24,7 +24,11 @@
     integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
     integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -114,8 +118,8 @@
 
             <div class="header__search">
               <img src="./src/assets/icons/search.png" alt="icon search" />
-              <input id="search-input" maxlength="80x0" autocorrect="off" autocapitalize="off" spellcheck="false"
-                placeholder="¿Qué te apetece escuchar?" />
+              <input id="search-input" maxlength="800" autocorrect="off" autocapitalize="off" spellcheck="false"
+                placeholder="¿Qué te apetece escuchar?" type="search" />
             </div>
           </div>
 
@@ -263,7 +267,7 @@
 
           <div id="result-artist" class="hidden">
             <div class="grid-container">
-              <div class="artist-card" id="">
+              <div class="artist-card">
                 <div class="card-img">
                   <img id="artist-img" class="artist-img" />
                   <div class="play">
@@ -274,9 +278,19 @@
                   <a title="Foo Fighters" class="vst" href=""></a>
                   <span class="artist-name" id="artist-name"></span>
                   <span class="artist-categorie">Artista</span>
+                  <span class="artist-genre" id="artist-genre"></span>
                   </a>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="hidden" id="error-message-container">
+            <div class="error-message">
+              <h4 id="error-search-title">No se ha encontrado ningún resultado para </h4>
+              <p id="error-search-subtitle">Asegúrate de que las palabras estén escritas correctamente o prueba con
+                menos
+                palabras
+                clave o con otras distintas.</p>
             </div>
           </div>
         </div>

@@ -77,7 +77,7 @@
 	border: 0px;
 	font-size: 1rem;
 	font-weight: 700;
-	font-family: "Montserrat", sans-serif;
+	font-family: var(--font-dm-sans);
 	text-align: center;
 	text-decoration: none;
 	text-transform: none;
@@ -144,8 +144,8 @@
 	box-sizing: border-box;
 	border-radius: 20px;
 	font-size: 0.8rem;
-	font-weight: 600;
-	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-family: var(--font-dm-sans);
 	text-decoration: none;
 	text-transform: none;
 	padding: 10px;
@@ -162,7 +162,7 @@
 .footer-links {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 6rem 0rem 4.7rem 0rem;
+	padding: 6rem 0rem 4.3rem 0rem;
 }
 
 .sidebar .footer-link {
@@ -208,13 +208,15 @@
 	left: 0;
 	right: 0;
 	background: linear-gradient(to right, #ae2896, #509bf5);
-	padding: 1.3rem;
+	padding: 1rem 1.2rem;
 	display: flex;
 	justify-content: space-between;
 	z-index: 3;
+	overflow-y: hidden;
 }
 .disclaimer-premium .text {
 	word-wrap: break-word;
+	margin-right: 1rem;
 }
 .disclaimer-premium .disclaimer-premium__title {
 	color: #ffffff;
@@ -239,6 +241,8 @@
 	border: 0px;
 	border-radius: 40px;
 	cursor: pointer;
+	font-family: var(--font-dm-sans);
+	white-space: nowrap;
 }
 
 .disclaimer-premium button:hover {

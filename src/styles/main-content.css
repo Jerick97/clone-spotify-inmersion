@@ -71,7 +71,7 @@
 	border: none;
 	padding: 0px 12px;
 	color: #fff;
-	*text-overflow: ellipsis;
+	text-overflow: ellipsis;
 	outline: none;
 	overflow: hidden;
 	white-space: nowrap;
@@ -83,7 +83,8 @@
 	font-size: 1rem;
 	font-weight: 700;
 	background-color: transparent;
-	margin-right: 32px;
+	margin-right: 1rem;
+	font-family: var(--font-dm-sans);
 }
 
 .header__login .login {
@@ -91,15 +92,17 @@
 	height: 48px;
 	color: var(--text-base-dark);
 	font-size: 1rem;
-	font-weight: 600;
+	font-weight: 700;
 	border-radius: 40px;
-	padding: 7px 20px;
+	padding: 0.8rem 2rem;
+	font-family: var(--font-dm-sans);
+	white-space: nowrap;
 }
 
 /* HOVER */
 
 .header__search:hover {
-	border: 1px solid #fff;
+	border: 2px solid #fff;
 }
 
 .header__login .subscribe:hover {
@@ -150,6 +153,7 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
 	gap: 0.8rem;
+	overflow: hidden;
 }
 
 /* POSITION */
@@ -166,7 +170,7 @@
 	padding: 16px;
 	position: absolute;
 	color: var(--text-base-light);
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	font-weight: 700;
 }
 
@@ -231,7 +235,7 @@
 
 .artist {
 	--column-count: 5;
-	--grid-gap: 24px;
+	--grid-gap: 1rem;
 	--min-container-width: 372px;
 }
 
@@ -240,17 +244,15 @@
 }
 
 .grid-container {
-	grid-gap: var(--grid-gap);
+	gap: var(--grid-gap);
 	display: grid;
 	grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
-	min-width: var(--min-container-width);
+	min-width: 372px;
 }
 
 .artist-card {
 	background: #181818;
 	border-radius: 8px;
-	-ms-flex: 1;
-	flex: 1;
 	isolation: isolate;
 	padding: 16px;
 	position: relative;
@@ -282,9 +284,8 @@
 	display: flex;
 	flex-direction: column;
 	color: #fff;
-	overflow: hidden;
 	text-overflow: ellipsis;
-	white-space: nowrap;
+	white-space: normal;
 	min-height: 62px;
 }
 
@@ -306,6 +307,13 @@
 	color: #6a6a6a;
 	font-weight: 400;
 	font-size: 0.875rem;
+}
+
+.artist-genre {
+	color: #1db954;
+	font-weight: 400;
+	font-size: 1rem;
+	margin-top: 5px;
 }
 
 .play {
@@ -337,6 +345,28 @@
 #result-artist {
 	padding: 20px 40px;
 }
+
+.error-message {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	text-align: center;
+	padding: 8rem 1rem 2rem 1rem;
+}
+
+.error-message h4 {
+	color: #fff;
+	font-size: 1.2rem;
+	padding: 1rem;
+}
+
+.error-message p {
+	color: #fff;
+	font-size: 1rem;
+	padding: 1rem;
+	line-height: 1.5;
+}
+
 /* FIM CARD ARTISTA */
 
 @media screen and (max-width: 865px) {
@@ -347,5 +377,23 @@
 	.cards {
 		width: 11.1rem;
 		height: 11.1rem;
+	}
+
+	.header__login .login {
+		font-size: 1rem;
+		padding: 0.8rem 1.2rem;
+	}
+
+	.arrow-right {
+		display: none;
+		margin-right: 0.2rem;
+	}
+
+	.header__search input {
+		width: 1rem;
+	}
+
+	.header__search input::placeholder {
+		opacity: 0;
 	}
 }
