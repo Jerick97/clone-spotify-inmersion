@@ -4,6 +4,7 @@
 	padding: 8px;
 	position: fixed;
 	z-index: 2;
+	height: 100vh;
 }
 
 .sidebar .logo {
@@ -60,7 +61,6 @@
 	background-color: #121212;
 	border-radius: 8px;
 	display: flex;
-	justify-content: space-between;
 	min-block-size: 40px;
 	padding: 4px 8px;
 	color: #b3b3b3;
@@ -68,6 +68,7 @@
 	font-size: 14px;
 	margin: 10px auto;
 	flex-direction: column;
+	height: 90vh;
 }
 
 .library .library__button {
@@ -102,6 +103,10 @@
 	margin: 24px 10px;
 }
 
+.container-playlist {
+	margin-bottom: 8rem;
+}
+
 .section-playlist {
 	background-color: #242424;
 	align-items: flex-start;
@@ -115,6 +120,7 @@
 	font-size: 14px;
 	margin: 8px 0;
 	padding: 16px 20px;
+	top: 0;
 }
 
 .section-playlist .section-playlist__content {
@@ -162,7 +168,7 @@
 .footer-links {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 6rem 0rem 4.3rem 0rem;
+	padding: 0rem 0rem 4.3rem 0rem;
 }
 
 .sidebar .footer-link {

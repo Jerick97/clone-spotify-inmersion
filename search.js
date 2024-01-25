@@ -39,16 +39,69 @@ function requestApi(searchTerm) {
 		});
 }
 
+function createArtistCard(artist) {
+	// Crea un nuevo card
+	const artistCard = document.createElement("div");
+	artistCard.classList.add("artist-card");
+
+	// Crea la sección de la imagen
+	const cardImgArtist = document.createElement("div");
+	cardImgArtist.classList.add("card-img-artist");
+
+	const artistImage = document.createElement("img");
+	artistImage.classList.add("artist-img");
+	artistImage.alt = artist.name;
+	artistImage.src = artist.urlImg;
+
+	// Crea la sección del icono de reproducción
+	const playDiv = document.createElement("div");
+	playDiv.classList.add("play");
+
+	const playIcon = document.createElement("span");
+	playIcon.classList.add("fa", "fa-solid", "fa-play");
+
+	// Agrega la imagen y el icono de reproducción al card
+	cardImgArtist.appendChild(artistImage);
+	playDiv.appendChild(playIcon);
+	cardImgArtist.appendChild(playDiv);
+	artistCard.appendChild(cardImgArtist);
+
+	// Crea la sección del texto del card
+	const cardText = document.createElement("div");
+	cardText.classList.add("card-text");
+
+	const artistName = document.createElement("h3");
+	artistName.classList.add("artist-name");
+	artistName.innerText = artist.name;
+
+	const artistCategorie = document.createElement("p");
+	artistCategorie.classList.add("artist-categorie");
+	artistCategorie.innerText = "Artista";
+
+	const artistGenre = document.createElement("p");
+	artistGenre.classList.add("artist-genre");
+	artistGenre.innerText = artist.genre;
+
+	// Agrega el nombre del artista, la categoría y el género al card
+	cardText.appendChild(artistName);
+	cardText.appendChild(artistCategorie);
+	cardText.appendChild(artistGenre);
+	artistCard.appendChild(cardText);
+
+	return artistCard;
+}
+
 function displayResults(results) {
 	if (results.length > 0) {
-		const artistImage = document.getElementById("artist-img");
-		const artistName = document.getElementById("artist-name");
-		const artistGenre = document.getElementById("artist-genre");
+		const gridContainer = document.querySelector(".grid-container");
+
+		// Limpia el contenido actual
+		gridContainer.innerHTML = "";
 
 		results.forEach((element) => {
-			artistImage.src = element.urlImg;
-			artistName.innerText = element.name;
-			artistGenre.innerText = element.genre;
+			// Llama a la función para crear el card y lo agrega al contenedor de la cuadrícula
+			const card = createArtistCard(element);
+			gridContainer.appendChild(card);
 		});
 	}
 }
