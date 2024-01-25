@@ -26,11 +26,16 @@ function requestApi(searchTerm) {
 					artist.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
 					artist.genre.toLowerCase().includes(searchTerm.toLowerCase())
 			);
-			if (filteredArtists.length === 0) {
-				resultArtist.classList.add("hidden");
-				errorMessageContainer.classList.remove("hidden");
-				errorMessageTitle.innerText = `No se ha encontrado ningún resultado para "${searchTerm}"`;
-			} else {
+			if (searchTerm === searchInput.value.toLowerCase().trim()) {
+				if (filteredArtists.length > 0) {
+					errorMessageContainer.classList.add("hidden");
+				} else {
+					// Muestra el mensaje de error si no hay resultados
+					resultArtist.classList.add("hidden");
+					errorMessageContainer.classList.remove("hidden");
+					errorMessageTitle.innerText = `No se ha encontrado ningún resultado para "${searchInput.value}"`;
+				}
+
 				displayResults(filteredArtists);
 			}
 		})
@@ -112,15 +117,14 @@ function hidePlaylists() {
 
 searchInput.addEventListener("input", function () {
 	const searchTerm = searchInput.value.toLowerCase().trim();
-
 	if (searchTerm === "") {
 		resultArtist.classList.add("hidden");
 		errorMessageContainer.classList.add("hidden");
 		playlistContainer.classList.remove("hidden");
 		return;
 	}
-	playlistContainer.classList.add("hidden");
 	errorMessageContainer.classList.add("hidden");
+	playlistContainer.classList.add("hidden");
 	resultArtist.classList.remove("hidden");
 	requestApi(searchTerm);
 });
