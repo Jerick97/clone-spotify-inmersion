@@ -1,23 +1,56 @@
 @media screen and (min-width: 1140px) and (max-width: 1680px) and (max-height: 900px) {
 	.container-playlist {
-		margin-bottom: 1rem;
+		margin-bottom: 0.2rem;
 	}
 
 	.section-playlist__content .text {
-		padding-bottom: 0.3rem;
+		padding-bottom: 0.2rem;
+	}
+
+	.library {
+		padding-bottom: 0rem;
+		height: 30.2rem;
+	}
+
+	.library__content {
+		padding-bottom: 0rem;
 	}
 
 	.footer-links {
-		padding-bottom: 0.5rem;
+		padding-bottom: 0.2rem;
+		padding-top: 0rem;
 	}
 
 	.offer__list {
-		grid-template-columns: repeat(auto-fit, minmax(10.7rem, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(7.8rem, 1fr));
 	}
 
 	.cards {
-		width: 10.7rem;
-		height: 10.7rem;
+		width: 8.8rem;
+		height: 8.8rem;
+	}
+
+	.playlist-container {
+		height: 36rem;
+	}
+
+	.site-footer {
+		min-height: 10rem;
+		padding: 0rem 1rem;
+	}
+}
+
+@media screen and (min-width: 1195px) and (max-width: 1336px) {
+	.footer-text {
+		padding: 1rem;
+		margin-right: 1.8rem;
+	}
+}
+
+@media screen and (min-width: 1140px) and (max-width: 1195px) {
+	.footer-text {
+		padding: 1rem;
+		margin-right: auto;
 	}
 }
 
@@ -25,11 +58,21 @@
 	.header__search {
 		width: 19rem;
 	}
+
+	.footer-text {
+		padding: 1rem;
+		margin-right: auto;
+	}
 }
 
 @media screen and (min-width: 1071px) and (max-width: 1100px) {
 	.header__search {
 		width: 17rem;
+	}
+
+	.footer-text {
+		padding: 1rem;
+		margin-right: auto;
 	}
 }
 
@@ -37,11 +80,29 @@
 	.header__search {
 		width: 15rem;
 	}
+
+	.offer__list {
+		grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+	}
+
+	.cards {
+		width: 11.45rem;
+		height: 11.45rem;
+	}
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1020px) {
 	.header__search {
-		width: 12rem;
+		width: 12.2rem;
+	}
+
+	.offer__list {
+		grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+	}
+
+	.cards {
+		width: 10.8rem;
+		height: 10.8rem;
 	}
 }
 
@@ -49,11 +110,29 @@
 	.header__search {
 		width: 9.5rem;
 	}
+
+	.offer__list {
+		grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+	}
+
+	.cards {
+		width: 9.7rem;
+		height: 9.7rem;
+	}
 }
 
 @media screen and (min-width: 889px) and (max-width: 935px) {
 	.header__search {
-		width: 7rem;
+		width: 6.8rem;
+	}
+
+	.offer__list {
+		grid-template-columns: repeat(auto-fit, minmax(6.5rem, 1fr));
+	}
+
+	.cards {
+		width: 8.5rem;
+		height: 8.5rem;
 	}
 }
 
@@ -61,16 +140,20 @@
 	.header__search {
 		width: 5rem;
 	}
+	.footer-text {
+		padding: 1rem;
+		margin-right: auto;
+	}
 }
 
-@media screen and (max-width: 865px) {
+@media screen and (min-width: 800px) and (max-width: 960px) {
 	.offer__list {
-		grid-template-columns: repeat(auto-fit, minmax(12.2rem, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 	}
 
 	.cards {
-		width: 12.5rem;
-		height: 12.5rem;
+		width: 11.6rem;
+		height: 11.6rem;
 	}
 
 	.header__login .login {
@@ -84,12 +167,12 @@
 	}
 
 	.header__search {
-		width: 7rem;
+		width: 5rem;
 		box-sizing: border-box;
 	}
 
 	.header__search input {
-		width: 7rem;
+		width: 5rem;
 	}
 
 	.header__search input::placeholder {
@@ -106,5 +189,85 @@
 
 	.main-container {
 		margin-left: 20rem;
+	}
+
+	.footer-text {
+		padding: 1rem;
+		margin-right: auto;
+	}
+
+	.container-playlist {
+		margin-bottom: 3rem;
+	}
+
+	.playlist-container {
+		height: 58rem;
+	}
+
+	.library {
+		height: 52rem;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 800px) {
+	.offer__list {
+		grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+	}
+
+	.cards {
+		width: 11.6rem;
+		height: 11.6rem;
+	}
+
+	.header__login .login {
+		font-size: 1rem;
+		padding: 0.8rem 1.2rem;
+	}
+
+	.arrow-right {
+		display: none;
+		margin-right: 0.2rem;
+	}
+
+	.header__search {
+		width: 5rem;
+		box-sizing: border-box;
+	}
+
+	.header__search input {
+		width: 5rem;
+	}
+
+	.header__search input::placeholder {
+		opacity: 0;
+	}
+
+	.sidebar {
+		width: 19.5rem;
+	}
+
+	.section-playlist {
+		margin-top: 0;
+	}
+
+	.main-container {
+		margin-left: 20rem;
+	}
+
+	.footer-text {
+		padding: 1rem;
+		margin-right: auto;
+	}
+
+	.container-playlist {
+		margin-bottom: 3rem;
+	}
+
+	.playlist-container {
+		height: 53rem;
+	}
+
+	.library {
+		height: 47rem;
 	}
 }

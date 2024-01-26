@@ -36,3 +36,15 @@ const observer = new ResizeObserver(() => {
 });
 
 observer.observe(container);
+
+// Cambio del Background del Navbar al hacer Scroll
+const playlistContain = document.querySelector(".playlist-container");
+const navbar = document.querySelector(".header__navigation");
+
+playlistContain.addEventListener("scroll", () => {
+	if (playlistContain.scrollTop > 0) {
+		navbar.classList.add("scrolled");
+	} else {
+		navbar.classList.remove("scrolled");
+	}
+});
