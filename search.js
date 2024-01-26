@@ -21,10 +21,8 @@ function requestApi(searchTerm) {
 			return response.json();
 		})
 		.then((data) => {
-			const filteredArtists = data.record.artists.filter(
-				(artist) =>
-					artist.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-					artist.genre.toLowerCase().includes(searchTerm.toLowerCase())
+			const filteredArtists = data.record.artists.filter((artist) =>
+				artist.name.toLowerCase().includes(searchTerm.toLowerCase())
 			);
 			if (searchTerm === searchInput.value.toLowerCase().trim()) {
 				if (filteredArtists.length > 0) {

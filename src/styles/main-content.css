@@ -255,7 +255,7 @@
 
 .artist {
 	--column-count: 7;
-	--grid-gap: 24px;
+	--grid-gap: 1rem;
 	--min-container-width: 23rem;
 }
 

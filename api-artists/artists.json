@@ -6,7 +6,12 @@
       { "id": 4, "name": "Chitãozinho e Xororó", "genre": "Sertanejo", "urlImg": "https://i.scdn.co/image/ab676161000051744606c59411c57f7b49588be4" },
       { "id": 5, "name": "Mc Coringa", "genre": "Funk", "urlImg": "https://i.scdn.co/image/ab67616d00001e02fe8f6dd361ad0f12b88c7f56" },
       { "id": 6, "name": "Arlindo Cruz", "genre": "Samba", "urlImg": "https://i.scdn.co/image/ab67616100005174181873f93056642d7b340839" },
-      { "id": 7, "name": "Caetano Veloso", "genre": "MPB", "urlImg": "https://i.scdn.co/image/ab67616100005174e98de50f36cf1aa4bf047757" }
+      { "id": 7, "name": "Caetano Veloso", "genre": "MPB", "urlImg": "https://i.scdn.co/image/ab67616100005174e98de50f36cf1aa4bf047757" },
+      { "id": 8, "name": "Oasis", "genre": "Rock", "urlImg": "https://i.scdn.co/image/ab67616100005174a572b3112ccbf374488fed58" },
+      { "id": 9, "name": "Radiohead", "genre": "Rock", "urlImg": "https://i.scdn.co/image/ab67616100005174a03696716c9ee605006047fd" },
+      { "id": 10, "name": "Imagine Dragons", "genre": "Rock", "urlImg": "https://i.scdn.co/image/ab67616100005174920dc1f617550de8388f368e" },
+      { "id": 11, "name": "Pedro Suárez-Vértiz", "genre": "Rock", "urlImg": "https://i.scdn.co/image/ab67616100005174d8aacea169dbf485886c2bee" },
+      { "id": 12, "name": "Keane", "genre": "Pop", "urlImg": "https://i.scdn.co/image/ab6761610000517441222a45dc0b10f65cbe8160" }
     ]
   }
   
